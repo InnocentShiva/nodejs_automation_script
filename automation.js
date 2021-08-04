@@ -45,7 +45,7 @@ describe('E2E Testcase : Opening Kibana for checking XXXX is having zero traffic
 
         await page.waitForTimeout(10000)
             var list_of_clientids = []
-            console.log("Following is the list of input clientIds")
+            console.log("Following is the list of input XXXXXX")
             const data = await fs.readFile('/Users/akshat.solanki/validator_KT/script_for_automation_node_js/list_of_clientIds.log',"binary")
             console.log(data.toString())
             // list_of_urls = data.toString().split("\n")
@@ -159,7 +159,7 @@ describe('E2E Testcase : Opening Kibana for checking XXXX is having zero traffic
                     const is_loading_succeeded_para_3 = await page.$('p').then(res =>!! res)
 
                     if(!is_loading_succeeded_para_3){
-                        console.log("Found the traffic in rid-arc going for next XXXXX")
+                        console.log("Found the traffic in POD-3 going for next XXXXX")
                     }
                     else{
                         // Adding the client for successfull client-id insertions
@@ -167,10 +167,10 @@ describe('E2E Testcase : Opening Kibana for checking XXXX is having zero traffic
                         await fs.appendFile('outputSuccessfullClientIds.csv', successlink, (error) => {
                 
                             if (error) {
-                                console.error(`Could not save the successfull clientId file: ${error}`)
+                                console.error(`Could not save the successfull XXXXXXXX file: ${error}`)
                             }
                 
-                            console.log('Saved our list of clientIds to outputSuccessfullClientIds')
+                            console.log('Saved our list of XXXXX to outputSuccessfullXXXXXX')
                         })
                     }
                 }    
